@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Simulation of You🚀</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <h1>Simulation of You🚀</h1>
+        <button id="modeToggle" class="mode-btn">🌙Toggle Mode</button>
+        <div class="app-container">
+            <!-- LEFT SECTION -->
+            <div class="form-section">
+            <form id="userForm">
+                <label>Age: 
+                    <input type="number" id="age" value="22" required>
+                </label>
+                <br>
+
+                <label>Income: 
+                    <input type="number" id="income" value="500" required>
+                </label>
+                <br>
+
+                <label>Sleep Hours: 
+                    <input type="number" id="sleepHours" value="5" required>
+                </label>
+                <br>
+
+                <label class="checkbox-container">
+                    Gym: <input type="checkbox" id="gym">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+
+                <label>Study Hours: 
+                    <input type="number" id="studyHours" value="2" required>
+                </label>
+                <br>
+
+                <label>Risk Level: 
+                    <input type="number" id="riskLevel" value="7" required>
+                </label>
+                <br>
+
+                <label class="checkbox-container">
+                    Invest: <input type="checkbox" id="invest">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <br>
+
+                <button type="submit">Run Simulation</button>
+            </form>
+        </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="results-section">
+                <div id="results"></div>
+            </div>
+        </div>
+
+        <script src="js/simulation.js" defer></script>
+        <script src="js/app.js" defer></script>
+    </body>
+</html>
